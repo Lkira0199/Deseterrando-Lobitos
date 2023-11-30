@@ -1961,6 +1961,11 @@ hr {
   top: 75%;
   left: 25%;
 }
+.contenedor_video2 iframe {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+}
 .contenedor_video3 {
   position: relative;
   width: 100%;
