@@ -2248,6 +2248,23 @@ margin-left: -150px;
   margin-left: 20px;
   margin-bottom: 5px;
 }
+.contenedor_video2 {
+  position: absolute;
+  width: 50%;
+  top: 0%;
+  left: 15%;
+  
+}
+
+.contenedor_video2 iframe {
+  width: 300px;
+  height: 500px;  
+  object-fit: cover;
+}
+.contenedor_texto_portada {
+  margin-left: 17%;
+  margin-top: 25%;
+}
 
 }
 
