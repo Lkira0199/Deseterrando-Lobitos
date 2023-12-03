@@ -53,7 +53,7 @@ hr,
 video,
 .contenedor_principal_episodios,
 .contenedor_episodios,
-.contenedor_episodios_texto,
+
 .contenedor_texto_portada,
 .contenedor_texto_portada h6,
 html,
@@ -449,12 +449,13 @@ Header Style
   padding-right: 25px;
 }
 
+/*
 .sub-header ul.info li:last-child {
   margin-right: 0px;
   padding-right: 0px;
   border-right: none;
 }
-
+*/
 .sub-header ul.info li i {
   font-size: 20px;
   color: #a87c0f;
@@ -531,11 +532,11 @@ Header Style
   position: relative;
   z-index: 999;
 }
-
+/*
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
 }
-
+*/
 .header-area .main-nav .nav li {
   padding-left: 10px;
   padding-right: 10px;
@@ -570,7 +571,7 @@ Header Style
   border-radius: 20px;
   padding-left: 0px;
 }
-*/
+
 .header-area .main-nav .nav li:last-child a i {
   background-color: #a87c0f;
   display: inline-block;
@@ -582,7 +583,7 @@ Header Style
   border-radius: 50%;
   margin-left: -1px;
 }
-/*
+
 .header-area .main-nav .nav li:last-child:hover a {
   background-color: #1e1e1e;
 }
@@ -775,11 +776,12 @@ Header Style
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
+  /*
   .header-area .nav li:last-child a {
     background-color: transparent !important;
     font-weight: 300 !important;
     text-transform: capitalize !important;
-  }
+  }*/
   .header-area {
     padding: 0px 15px;
     height: 80px;
@@ -1022,12 +1024,12 @@ Featured Style
   padding-bottom: 35px;
   border-bottom: 1px solid #eee;
 }
-
+/*
 .featured .info-table ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
-}
+}*/
 
 .featured .info-table ul li img {
   float: left;
@@ -1208,13 +1210,13 @@ Best Deal Style
   color: #aaa;
   font-weight: 400;
 }
-
+/*
 .best-deal .info-table ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-
+*/
 .best-deal .info-table ul li span {
   font-size: 20px;
   color: #1e1e1e;
@@ -1655,12 +1657,12 @@ Single Page Style
   padding-bottom: 35px;
   border-bottom: 1px solid #eee;
 }
-
+/*
 .single-property .info-table ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
-}
+}*/
 
 .single-property .info-table ul li img {
   float: left;
@@ -2033,6 +2035,14 @@ video {
 
 .divJuego {
   margin-left: 25%;
+  max-width: 100%;
+  width: 1000px;
+  height: 700px;
+}
+.divJuego iframe{
+   width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .divrese-principal {
@@ -2040,7 +2050,7 @@ video {
   margin-top: 0%;
 }
 .divrese-principal-img {
-  width: 1800px;
+  width: 150%;
   height: 550px;
 }
 .divrese-principal-img img {
@@ -2157,9 +2167,10 @@ body {
   .properties ul.properties-filter li {
     margin: 5px;
   }
+  /*
   .header-area .main-nav .nav li:last-child {
     display: none;
-  }
+  }*/
   .contenedor_principal_episodios {  
   margin-bottom: 0%;
   width: 100%;
@@ -2168,17 +2179,68 @@ body {
   flex-wrap: wrap;
 }
   .contenedor_episodios {
-  margin-left: 5%;
-  width: 50%;
-  height: 100%;
+  margin-left: 10%;
+  width: 80%;
+  
 }
 
 .contenedor_episodios_texto {
-  margin-left: 15%;
-  margin-top: 3%;
-  width: 10%;
-  height: 100%;
+    width: 80%;
+  
 }
+.contenedor_episodios_texto p {
+  text-align: justify;
+  font-size: 15px;
+}
+
+.contenedor_episodios_texto h7 {
+  font-size: 25px;
+}
+
+.divrese-principal {  
+  margin-bottom: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Usa el modelo de caja flexible para alinear los elementos en una fila */
+  flex-wrap: wrap;
+}
+
+.divrese-principal-img {
+  width: 90%;
+  height: 400px;
+  margin-left: 5%;
+  
+}
+.divrese-principal-img p {
+  font-size: 14px;
+  text-align: center;
+}
+.divrese-principal-texto {
+  width: 100%;
+  height: 100%;
+  margin-left: 2%;
+  margin-top: 10%;
+}
+.divrese-principal-texto p {
+  font-size: 14px;
+  text-align: justify;
+}
+.divrese-principal-texto h7 {
+  font-size: 22px;
+}
+.divJuego {
+  margin-left: 8%;
+  max-width: 100%;
+  width: 350px;
+  height: 350px;
+}
+
+.divcuentos img {
+ width: 700px;
+ height: 100%;
+margin-left: -150px;
+}
+
 }
 
 @media (max-width: 992px) {
