@@ -1800,14 +1800,7 @@ Contact Page Style
   margin: 30px; /* Agrega márgenes alrededor del contenedor */
   box-sizing: border-box; /* Incluye el padding y border en el ancho total */
 }
-.contenedor_video {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0px; /* Agrega márgenes alrededor del contenedor */
-  /* Incluye el padding y border en el ancho total */
-}
+
 
 .contenedor_imagen_logo2 {
   width: 1800px;
@@ -1993,7 +1986,7 @@ video {
 }
 .contenedor_texto_portada {
   margin-left: 17%;
-  margin-bottom: 2%;
+  
 }
 
 .contenedor_texto_portada h6 {
@@ -2237,7 +2230,7 @@ margin-left: -150px;
 
 .contenedor_texto_portada {
   margin-left: 17%;
-  margin-top: 45%;
+  
 }
 
 .divJuego {  
@@ -2273,6 +2266,14 @@ margin-left: -150px;
   
   height: 25vh;
  
+}
+
+.contenedor_video2 {
+  
+  width: 75%;
+  
+  top: 50%;
+  left: 15%;
 }
 
 }
@@ -2381,7 +2382,7 @@ margin-left: -150px;
   
 .contenedor_texto_portada {
   margin-left: 100%;
-  margin-top: 25%;
+  
 }
 
 }
