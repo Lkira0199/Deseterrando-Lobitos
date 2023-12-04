@@ -31,14 +31,7 @@ font & reset css
 reset
 --------------------------------------------- 
 */
-#contenedor_principal,
-#contenedor_galeria,
-.contenedor_imagen_texto,
-.contenedor_video,
-.contenedor_imagen_logo2,
-.contenedor_imagen_quienessomos,
-.contenedor_imagen_galeria,
-.contenedor_imagen_quienessomos_brad,
+
 .texto,
 .textoh2,
 .textoh1galeria,
@@ -48,11 +41,9 @@ reset
 .logoimg,
 hr,
 .video-container-portada,
-.contenedor_video1,
-.contenedor_video2,
+
 video,
-.contenedor_principal_episodios,
-.contenedor_episodios,
+
 
 .contenedor_texto_portada,
 .contenedor_texto_portada h6,
@@ -1788,11 +1779,11 @@ Contact Page Style
 */
 
 #contenedor_principal {
-  width: 1800px;
-  height: auto;
+   width: 90%; /* 90% del ancho del contenedor padre */
+  max-width: 1800px; /* Establece un límite máximo de 1800px */
   margin: auto;
-  text-align: center; /* Alinea el contenido al centro horizontalmente */
-  overflow: hidden; /* Evita que los márgenes externos se sumen */
+  text-align: center;
+  overflow: hidden;/* Evita que los márgenes externos se sumen */
 }
 #contenedor_galeria {
   width: 1900px;
@@ -1827,18 +1818,18 @@ Contact Page Style
   box-sizing: border-box; /* Incluye el padding y border en el ancho total */
 }
 .contenedor_imagen_quienessomos {
-  width: 400px;
-  height: 500px;
-  display: inline-block;
-  vertical-align: top;
-  margin: 30px; /* Agrega márgenes alrededor del contenedor */
-  box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px; /* Agrega márgenes alrededor del contenedor */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
 
-  border: 2px solid #a87c0f; /* Grosor y color del borde */
-  border-radius: 10px; /* Borde redondeado */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
-  padding: 20px;
-}
+    border: 2px solid #a87c0f; /* Grosor y color del borde */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
+    padding: 20px;
+  }
 .texto-cargo {
   height: auto;
   text-align: center;
@@ -2276,6 +2267,24 @@ margin-left: -150px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.divportada-quienesomos {
+  flex-direction: row; /* Vuelve a la dirección de fila en pantallas más grandes */
+  align-items: center; 
+}
+.divportada-quienesomos-imagen,
+.divportada-quienesomos-texto {
+  width: 100%; /* En pantallas más grandes, cada elemento ocupa la mitad del ancho */
+  max-width: none;
+}
+.divportada-quienesomos-imagen {
+    margin: 0 2%; /* Ajusta el espacio alrededor */
+  }
+
+
+.divportada-quienesomos-texto p {
+  font-size: 18px;
+  text-align: justify;
 }
 
 }
