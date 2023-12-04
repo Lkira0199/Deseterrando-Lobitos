@@ -1963,8 +1963,8 @@ hr {
   left: 25%;
 }
 .contenedor_video2 iframe {
-  width: 1000px;
-  height: 500px;
+  width: 50em; /* 1000px en em depende del contexto de la fuente */
+  height: 35em; /* 500px en em depende del contexto de la fuente */
   object-fit: cover;
 }
 .contenedor_video3 {
@@ -2034,17 +2034,23 @@ video {
   object-fit: contain; /* Ajusta la imagen para que quepa dentro del contenedor sin cortarla */
 }
 
-.divJuego {
-  margin-left: 25%;
+.divJuego {  
   max-width: 100%;
-  width: 1000px;
-  height: 700px;
+  width: 70%; 
+  height: 85vh; 
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.divJuego iframe{
-   width: 100%;
+
+.divJuego iframe {
+  width: 100%;
   height: 100%;
   border: 0;
 }
+
 
 .divrese-principal {
   display: flex;
@@ -2229,12 +2235,7 @@ body {
 .divrese-principal-texto h7 {
   font-size: 22px;
 }
-.divJuego {
-  margin-left: 8%;
-  max-width: 100%;
-  width: 350px;
-  height: 350px;
-}
+
 
 .divcuentos img {
  width: 700px;
@@ -2264,6 +2265,17 @@ margin-left: -150px;
 .contenedor_texto_portada {
   margin-left: 17%;
   margin-top: 45%;
+}
+
+.divJuego {  
+  max-width: 100%;
+  width: 100%; 
+  height: 50vh; 
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 }
@@ -2356,6 +2368,8 @@ margin-left: -150px;
     float: right !important;
     width: auto !important;
   }
+  
+  
 }
 
 @media (max-width: 1200px) {
@@ -2366,6 +2380,24 @@ margin-left: -150px;
   .contact-page .section-heading {
     margin-right: 100px;
   }
+
+  .contenedor_video2 {
+  position: absolute;
+  width: 50%;
+  top: 55%;
+  left: 15%;
+}
+.contenedor_texto_portada {
+  margin-left: 100%;
+  margin-top: 25%;
+}
+
+}
+@media (max-width: 1600px) {
+.contenedor_texto_portada {
+  margin-left: 17%;
+  margin-top: 30%;
+}
 }
 
 button.nav-link {
