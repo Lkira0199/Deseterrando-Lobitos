@@ -1931,31 +1931,25 @@ hr {
   border-color: #ffffff; /* Código de color blanco en hexadecimal */
   border-width: 2px; /* Ajusta el grosor según tus necesidades */
 }
-
-.video-container-portada {
-  display: flex;
+.contenedor_video {  
   width: 100%;
+  height: 100vh;
+  background-image: url('../images/portada.jpg');
+  background-size: cover; /* Esto hará que la imagen cubra todo el contenedor */
+  background-position: center;
   margin-bottom: 18%;
 }
 
-.contenedor_video1 {
-  position: relative;
-  width: 100%;
-}
-.contenedor_video1 img {
-  width: 100%;
-  height: 100%;
-}
-
 .contenedor_video2 {
-  position: absolute;
+  position: relative;
   width: 50%;
-  top: 75%;
+  height: 100%;
+  top: 50%;
   left: 25%;
 }
 .contenedor_video2 iframe {
-  width: 50em; /* 1000px en em depende del contexto de la fuente */
-  height: 35em; /* 500px en em depende del contexto de la fuente */
+  width: 100%; /* 1000px en em depende del contexto de la fuente */
+  height: 100%; /* 500px en em depende del contexto de la fuente */
   object-fit: cover;
 }
 .contenedor_video3 {
@@ -2240,19 +2234,7 @@ margin-left: -150px;
   margin-left: 20px;
   margin-bottom: 5px;
 }
-.contenedor_video2 {
-  position: absolute;
-  width: 50%;
-  top: 0%;
-  left: 15%;
-  
-}
 
-.contenedor_video2 iframe {
-  width: 300px;
-  height: 500px;  
-  object-fit: cover;
-}
 .contenedor_texto_portada {
   margin-left: 17%;
   margin-top: 45%;
@@ -2285,6 +2267,12 @@ margin-left: -150px;
 .divportada-quienesomos-texto p {
   font-size: 18px;
   text-align: justify;
+}
+
+.contenedor_video {  
+  
+  height: 25vh;
+ 
 }
 
 }
@@ -2390,12 +2378,7 @@ margin-left: -150px;
     margin-right: 100px;
   }
 
-  .contenedor_video2 {
-  position: absolute;
-  width: 50%;
-  top: 55%;
-  left: 15%;
-}
+  
 .contenedor_texto_portada {
   margin-left: 100%;
   margin-top: 25%;
