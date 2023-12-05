@@ -2264,6 +2264,7 @@ body {
 
 .divportada-quienesomos-imagen {
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .divportada-quienesomos-texto {
@@ -2276,6 +2277,19 @@ body {
   width: 75%;
   height: 100%;    
   
+}
+
+
+.divportada-quienesomos-texto p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.tituloquinessoomos {
+  
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 30px;
 }
 
 }
