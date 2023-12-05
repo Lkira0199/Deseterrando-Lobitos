@@ -1882,7 +1882,7 @@ Contact Page Style
   font-size: 34px;
 }
 .tituloquinessoomos {
-  height: auto;
+  
   text-align: center;
   color: #1a1a1a;
   font-size: 34px;
@@ -2061,24 +2061,23 @@ video {
   font-size: 24px;
 }
 
-.divportada-quienesomos {
+.divportada-quienesomos {  
   display: flex;
-  margin-bottom: 5%;
+  
+  margin-bottom: 3%;
   width: 100%;
-  height: auto;
-  max-width: 112.5em;
-  max-height: 112.5em;
+  height: 100%;
 }
 .divportada-quienesomos-imagen {
-  width: 62.5em;
-  height: 100%;
+  width: 50%;
+  height: 100%;   
   margin-left: 2%;
   margin-top: 2%;
   border: 2px solid #a87c0f;
 }
 
 .divportada-quienesomos-texto {
-  width: 62.5em;
+  width: 50%;
   height: 100%;
   margin-left: 3%;
   margin-right: 3%;
@@ -2243,24 +2242,7 @@ margin-left: -150px;
   align-items: center;
   justify-content: center;
 }
-.divportada-quienesomos {
-  flex-direction: row; /* Vuelve a la dirección de fila en pantallas más grandes */
-  align-items: center; 
-}
-.divportada-quienesomos-imagen,
-.divportada-quienesomos-texto {
-  width: 100%; /* En pantallas más grandes, cada elemento ocupa la mitad del ancho */
-  max-width: none;
-}
-.divportada-quienesomos-imagen {
-    margin: 0 2%; /* Ajusta el espacio alrededor */
-  }
 
-
-.divportada-quienesomos-texto p {
-  font-size: 18px;
-  text-align: justify;
-}
 
 .contenedor_video {  
   
@@ -2274,6 +2256,27 @@ margin-left: -150px;
   
   top: 50%;
   left: 15%;
+}
+.divportada-quienesomos{
+  display: flex; /* Usa el modelo de caja flexible para alinear los elementos en una fila */
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.divportada-quienesomos-imagen {
+  width: 100%;
+}
+
+.divportada-quienesomos-texto {
+  width: 100%;
+  
+}
+
+.contenedor_imagen_quienessomos {
+  margin-left: 2%;
+  width: 350px;
+  height: 450px;    
+  
 }
 
 }
