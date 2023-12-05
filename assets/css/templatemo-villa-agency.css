@@ -1967,7 +1967,7 @@ video {
 .contenedor_episodios {
   margin-left: 17%;
   width: 25%;
-  height: 100%;
+  height: auto !important;
 }
 
 .contenedor_episodios_texto {
@@ -2397,4 +2397,10 @@ body {
 
 button.nav-link {
   width: 150px; /* Establece el ancho deseado para los botones */
+}
+
+@media (max-width: 373px) {
+button.nav-link {
+  width: 145px; /* Establece el ancho deseado para los botones */
+}
 }
