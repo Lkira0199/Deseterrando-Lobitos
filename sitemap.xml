@@ -31,14 +31,7 @@
         <priority>0.8</priority>
   </url>
   
-  <url>
-  <loc>https://desenterrandolobitos.com/assets/images/Cine%20Lobitos.mp4#t=0.001</loc>
-  <video:video xmlns:video="https://desenterrandolobitos.com/episodios">
-    <video:thumbnail_loc>https://desenterrandolobitos.com/assets/images/Cine%20Lobitos_thumbnail.jpg</video:thumbnail_loc>
-    <video:title>Cine Lobitos</video:title>
-    <video:description>Edificado a inicios de 1900, conocido como el primer cine de Sudamérica, en el que se proyectaron películas de vaqueros y las primeras producciones de Cantinflas.</video:description>
-  </video:video>
-</url>
+  
 
 
 </urlset>
